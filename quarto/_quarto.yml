@@ -1,0 +1,6 @@
+project:
+  type: website 
+  output-dir: dist
+  post-render: 
+    - ../R/post_render_script.R 
+  

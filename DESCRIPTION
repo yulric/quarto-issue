@@ -1,0 +1,26 @@
+Package: QuartoRenvIssue
+Type: Package
+Title: Reproduction Case for Quarto renv post render Issue
+Version: 0.1.0
+Description: This package demonstrates an issue where Quarto's post-render 
+    scripts cannot access R libraries installed via renv within a Github 
+    action. The post-render script fails to load renv-managed packages despite
+    them being available in the R project environment.
+Authors@R: person(
+  "Yulric",
+  "Sequeira",
+  email = "yulrics@gmail.com",
+  role = c("aut", "cre")
+)
+License: MIT
+Encoding: UTF-8
+LazyData: true
+Depends: 
+    R (>= 4.0.0)
+Imports:
+    dplyr,
+    jsonlite,
+Suggests:
+    knitr,
+    rmarkdown,
+    quarto

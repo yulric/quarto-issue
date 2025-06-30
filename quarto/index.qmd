@@ -1,0 +1,12 @@
+---
+title: "Quarto renv Post-Render Issue Reproduction"
+format: html
+---
+
+There are no issues rendering any .qmd files that use R libraries.
+
+```{r}
+library(dplyr)
+library(jsonlite)
+```
+
